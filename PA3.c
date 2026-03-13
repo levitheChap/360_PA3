@@ -57,14 +57,6 @@ int main(int argc, char* argv[]) {
             processes[i + 1] = processes[i];//move >er arrival time to next index
             processes[i] = temp;//move <er arrival time to current index
             
-            
-            // for (int j = 0; j < n - 1 - i; j++) {
-            //     if (processes[j].arrival_time > processes[j + 1].arrival_time) {
-            //         Process temp = processes[j];
-            //         processes[j] = processes[j + 1];
-            //         processes[j + 1] = temp;
-            //     }
-            // }
         }
         
     }
@@ -83,12 +75,13 @@ int main(int argc, char* argv[]) {
     fcfs(processes, n);
     print_metrics(processes, n);
 
-    return 0;
 
     printf("\n===== Shortest Job First =====\n");
     reset_processes(processes, n);
     sjf(processes, n);
     print_metrics(processes, n);
+
+    return 0;
 
     printf("\n===== Round Robin (q = %d) =====\n", quantum);
     reset_processes(processes, n);
