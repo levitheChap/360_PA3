@@ -7,17 +7,6 @@
 
 
 /* -----------------------------
-   Utility: sort by arrival time
--------------------------------- */
-    // TODO:
-    // 1. Sort processes by arrival time (if needed)
-    // 2. For each process:
-    //    - Advance current_time if CPU is idle
-    //    - Run process to completion
-    //    - Set completion_time
-
-
-/* -----------------------------
    Main
 -------------------------------- */
 int main(int argc, char* argv[]) {
