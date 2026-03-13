@@ -70,12 +70,14 @@ int main(int argc, char* argv[]) {
     sjf(processes, n);
     print_metrics(processes, n);
 
-    return 0;
 
     printf("\n===== Round Robin (q = %d) =====\n", quantum);
     reset_processes(processes, n);
     round_robin(processes, n, quantum);
     print_metrics(processes, n);
+
+    
+    return 0;
 
     
 }
